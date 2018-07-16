@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/* 밑줄제거, 기본 커서 포인터로 변경 */
+a{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/* 대여게시판 작물리스트 높이 조절 */
+.cropsList {
+	height: 80px;
+}
+
+/* 대여게시판 작물리스트 넓이조절 */ 
+.cropsList>a {
+	display: inline-block !important;
+	width: 48px;
+}
+/* 패럴랙스 사이즈 조절 */
+.parallax-window {
+    min-height: 600px;
+}
+
+/* 메인로고 fixed top을 위해 간격 넓힘 */
+.main{
+	margin-top: 210px;
+}
+
+/* 메인로고 fixed top을 위해 간격 넓힘 */
+.mainImg{
+	margin-top: 162px;
+}
+
+.kor {
+	font-family: "Hi Melody";
+}
+/* header 간격 넓히기 */
+.nav-link {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+ 
+/* dropdown hover 적용 */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+/* 작물사전에 있는 작물 hover적용 */
+.crops-card:hover {
+	cursor: pointer;
+}
+.crops-card:hover>.card-header{
+	filter: contrast(200%);
+}
+.trade-card:hover {
+	cursor: pointer;
+}
+.trade-card:hover>.card-header{
+	filter: contrast(200%);
+}
+
+/* 거래게시판목록에 보여줄 이미지 사이즈 조절 */
+.trade-img {
+	height: 10rem;
+}
+
+.main-card>.card-body>img {
+	height: 64px;
+}
+
+.main-card>.card-body>i {
+	color: gray;
+}
+
+.main-card>.card-body:hover {
+	background-color: black;
+	color: white;
+}
+
+/* file 텍스트 제거 */
+.filebox input[type="file"] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.filebox .upload-name {
+	display: inline-block;
+	padding: .5em .75em; /* label의 패딩값과 일치 */
+	font-size: inherit;
+	font-family: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #f5f5f5;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radius: .25em;
+	-webkit-appearance: none; /* 네이티브 외형 감추기 */
+	-moz-appearance: none;
+	appearance: none;
+}
